@@ -173,6 +173,8 @@ i.menu {
 .p-cont h1 {
   background-color: var(--orange);
   margin-bottom: 1rem;
+}
+.offers {
   font-size: xx-large;
 }
 .p-cont img {
