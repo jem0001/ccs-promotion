@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="nav-bg nav-section" id="nav">
+      <div class="nav-container container">
+        <a href="#nav">
+          <div class="logo-container">
+            <h1>LSPU</h1>
+            <img src="images/lspu-ccs.png" alt="" />
+            <h1>CCS</h1>
+          </div>
+        </a>
+
+        <ul class="big-nav">
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#courses">Courses</a>
+          </li>
+          <li>
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+        <ul class="small-nav">
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <hr />
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <hr />
+          <li>
+            <a href="#courses">Courses</a>
+          </li>
+          <hr />
+          <li>
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+        <i class="fa fa-bars menu" id="menu"></i>
+      </div>
+    </nav>
+    <section class="hero-section" id="hero">
+      <div class="desc">
+        <h1 class="welcome">Welcome to LSPU College of Computer Studies</h1>
+        <h2 class="quote">"Your Future Starts Here!"</h2>
+        <p>
+          At LSPU College of Computer Studies, we ignite your passion for
+          technology and empower you to shape the future
+        </p>
+      </div>
+      <img src="images/CCS.jpg" alt="" />
+    </section>
+    <!--  ABOUT US-->
+    <section class="about-section" id="about">
+      <div class="container about-cont">
+        <h1>About Us</h1>
+        <p>
+          Welcome to the LSPU College of Computer Studies, where innovation
+          meets education to shape the future leaders of the digital age.
+        </p>
+        <div class="mv-cont">
+          <div class="mv">
+            <div class="mv-img">
+              <img src="images/LSPU.png" alt="" />
+              <h2>Mission</h2>
+              <img src="images/CCS.jpg" alt="" />
+            </div>
+
+            <p>
+              The Laguna State Polytechnic University is a center of sustainable
+              development iniitiatives transforming lives and communities
+            </p>
+          </div>
+          <div class="mv">
+            <div class="mv-img">
+              <img src="images/LSPU.png" alt="" />
+              <h2>Vision</h2>
+              <img src="images/CCS.jpg" alt="" />
+            </div>
+
+            <p>
+              LSPU provides quality education through responsive instruction,
+              distinctive research, sustainable extension and production
+              services from improved quality of life.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2 class="experienced">Experienced Faculty members</h2>
+          <div class="faculty-img-cont">
+            <img src="images/faculty.jpg" alt="" />
+            <p>
+              Our faculty members are more than just teachers—they are
+              passionate mentors dedicated to honing your skills and shaping
+              your success. With their wealth of experience and commitment to
+              excellence, they will guide you on your journey to becoming a
+              successful professional in the field of computer studies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COURSE -->
+    <section class="programs-section" id="courses">
+      <div class="programs-container">
+        <h1>Course Offers</h1>
+        <div class="programs-cont">
+          <div class="p-cont">
+            <img src="images/it.jfif" alt="" />
+            <h1>BSINFO</h1>
+            <p>
+              The BSINFO program at LSPU College of Computer Studies is designed
+              to equip students with the knowledge and skills needed to succeed
+              in the rapidly evolving field of information technology. Through a
+              combination of theoretical learning and hands-on experience,
+              students will learn about software development, database
+              management, networking, and cybersecurity. Graduates of this
+              program are prepared for careers as IT professionals in various
+              industries.
+            </p>
+          </div>
+          <div class="p-cont">
+            <img src="images/cs.jfif" alt="" />
+            <h1>BSCS</h1>
+            <p>
+              The BSCS program at LSPU College of Computer Studies provides
+              students with a comprehensive education in computer science
+              principles and practices. Students will learn about algorithms,
+              data structures, programming languages, and software engineering.
+              This program emphasizes problem-solving skills and prepares
+              graduates for careers in software development, computer systems
+              analysis, and other related fields.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACTS -->
+    <hr />
+    <section class="contacts-section" id="contacts">
+      <div class="contacts-container">
+        <div class="logo-container-big">
+          <h1>LSPU</h1>
+          <img src="images/lspu-ccs.png" alt="" />
+          <h1>CCS</h1>
+        </div>
+        <div class="add-num">
+          <h1>CONTACTS US</h1>
+          <div>
+            <p>38M6+6VQ, Cosico Ave, San Pablo City, 4000 Laguna</p>
+            <p>Telephone: (049562) 8130</p>
+          </div>
+        </div>
+        <div class="quicklinks">
+          <h1>QUICK LINKS</h1>
+          <ul class="quick-nav">
+            <li>
+              <a href="#hero">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#courses">Courses</a>
+            </li>
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script>
+      const sidebar = document.querySelector(".small-nav");
+      const menu = document.getElementById("menu");
+      menu.addEventListener("click", () => {
+        if (sidebar.style.display === "none" || sidebar.style.display === "") {
+          sidebar.style.display = "flex";
+        } else {
+          sidebar.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

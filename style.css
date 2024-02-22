@@ -1,0 +1,242 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #000;
+  --accent-color: #ffa500;
+  --secondary-color: #cccccc;
+  --red: #962425;
+  --orange: #c36b20;
+  --gray: #b3a9a8;
+}
+body {
+  background-color: #000;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+/* GLOBALS */
+.container {
+  max-width: 1170px;
+  padding: 1em 1em;
+}
+li:hover {
+  color: var(--orange);
+}
+.logo-container:hover {
+  color: var(--orange);
+}
+/* NAVIGATION */
+.nav-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: auto;
+  font-size: large;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo-container img {
+  height: 30px;
+  width: 30px;
+}
+.logo-container h1 {
+  font-size: xx-large;
+}
+.nav-bg {
+  background-color: var(--red);
+}
+.big-nav {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+/* hero */
+.hero-section {
+  max-width: 768px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  height: calc(100vh - 84px);
+}
+.hero-section img {
+  border-radius: 50%;
+  height: 250px;
+}
+.quote {
+  font-weight: 400;
+}
+.welcome {
+  font-size: xx-large;
+  text-align: center;
+  color: var(--orange);
+}
+.desc {
+  text-align: center;
+  display: grid;
+  row-gap: 1rem;
+  color: var(--gray);
+}
+.small-nav {
+  display: none;
+}
+i.menu {
+  display: none;
+}
+/* about */
+
+.about-section {
+  background-color: var(--red);
+  color: white;
+}
+.about-cont {
+  text-align: center;
+  padding: 4rem 1rem;
+  margin: auto;
+}
+.about-cont h1 {
+  color: white;
+  font-size: xx-large;
+  padding-bottom: 2rem;
+}
+
+.mv {
+  background-color: black;
+  color: lightgray;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.mv h2 {
+  color: white;
+  padding-bottom: 1rem;
+}
+.mv-img {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  justify-content: space-around;
+}
+.mv-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.mv img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.experienced {
+  margin-bottom: 1rem;
+}
+.faculty-img-cont {
+  max-width: 960px;
+  margin: auto;
+}
+.faculty-img-cont img {
+  width: 100%;
+  height: 100%;
+}
+/* Programs */
+.programs-section {
+  padding: 4rem;
+  text-align: center;
+
+  max-width: 1170px;
+  margin: auto;
+}
+.programs-cont {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.p-cont {
+  border: 1px solid white;
+  color: lightgray;
+  padding: 1rem;
+  max-width: 500px;
+}
+.p-cont h1 {
+  background-color: var(--orange);
+  margin-bottom: 1rem;
+}
+.p-cont img {
+  height: 300px;
+  object-fit: cover;
+}
+.contacts-section {
+}
+/* CONTACTS */
+.logo-container-big {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo-container-big h1 {
+  font-size: 50px;
+}
+.logo-container-big img {
+  height: 80px;
+  width: 80px;
+}
+.contacts-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* SMALL SCREEN */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    max-width: 570px;
+  }
+  ul.big-nav {
+    display: none;
+  }
+  i.menu {
+    font-size: 2rem;
+    display: block;
+  }
+  ul.small-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: var(--red);
+    top: 6rem;
+    width: 40%;
+    text-align: center;
+    row-gap: 1rem;
+    padding: 2rem;
+    right: 0;
+  }
+  /* ABOUT */
+  .mv-cont {
+    grid-template-columns: 1fr;
+  }
+  /* CONTACTS */
+  .contacts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    padding: 4rem 0;
+  }
+}
